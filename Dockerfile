@@ -1,3 +1,3 @@
 FROM tomcat
 
-ADD target/helloworld.war /usr/local/tomcat/webapps/.
+ADD target/first-web-app.war /usr/local/tomcat/webapps/.
