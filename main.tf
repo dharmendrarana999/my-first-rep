@@ -20,10 +20,8 @@ resource "aws_instance" "DKRterraform" {
 }
 
 resource "aws_security_group" "instance" {
-  name = "rahul-sg"
+  name = "DKR"
   description = "Allow traffic for instances"
-
- 
 
   ingress {
     from_port = 22
@@ -31,8 +29,6 @@ resource "aws_security_group" "instance" {
     protocol = "tcp"
     cidr_blocks = [ "0.0.0.0/0" ]
   }
-
- 
 
   egress {
     from_port = 0
